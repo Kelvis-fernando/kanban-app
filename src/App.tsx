@@ -6,7 +6,7 @@ import Nav from "./components/Nav";
 
 const App = () => {
   return (
-    <div className="flex bg-zinc-700 h-screen text-white">
+    <div className="flex bg-zinc-800 h-screen text-white">
       <BrowserRouter>
         <Nav />
         <div className="flex space-x-auto">
