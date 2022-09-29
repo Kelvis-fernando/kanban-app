@@ -1,3 +1,4 @@
+import HeaderPage from "../components/HeaderPage";
 import Table from "../components/users/Table";
 
 const Users = () => {
@@ -35,12 +36,10 @@ const Users = () => {
       access: "Admin",
     },
   ];
+
   return (
     <div className="m-10">
-      <div className="mb-10">
-        <h1 className="font-black text-lg">Users</h1>
-        <h3 className="text-sm">Manage and add new users</h3>
-      </div>
+      <HeaderPage title={"Users"} subtitle={"Manage and add new users."} />
       <table>
         <tbody>
           {users.map((user, index) => {
