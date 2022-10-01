@@ -1,4 +1,5 @@
 import HeaderPage from "../components/HeaderPage";
+import Card from "../components/kanban/Card";
 const Kanban = () => {
   return (
     <div className="m-10">
@@ -7,19 +8,19 @@ const Kanban = () => {
         <div>
           <div>Header kanban</div>
           <div>
-            <div>Card</div>
+            <Card />
           </div>
         </div>
         <div>
           <div>Header kanban</div>
           <div>
-            <div>Card</div>
+            <Card />
           </div>
         </div>
         <div>
           <div>Header kanban</div>
           <div>
-            <div>Card</div>
+            <Card />
           </div>
         </div>
       </div>
