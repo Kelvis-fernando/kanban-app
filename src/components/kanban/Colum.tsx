@@ -1,8 +1,15 @@
-const Colum = (props: any) => {
+interface ColumProps {
+  colum: {
+    id: number;
+    name: string;
+  };
+  children?: JSX.Element | JSX.Element[];
+}
+const Colum = ({ colum, children }: ColumProps) => {
   return (
     <div className="bg-zinc-700 p-1 rounded-md">
-      <div className="bg-zinc-900 px-2 rounded-md w-full text-center">{props.colum.name}</div>
-      {props.children}
+      <div className="bg-zinc-900 px-2 rounded-md w-full text-center">{colum.name}</div>
+      {children}
     </div>
   );
 };

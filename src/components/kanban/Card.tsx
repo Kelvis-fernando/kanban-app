@@ -19,10 +19,13 @@ const Card = ({ card }: CardProps) => {
 
   return (
     <div className="p-2 max-w-[300px] flex flex-col items-center bg-zinc-900 my-2 mx-2 rounded-sm transparent">
-      <header className=" flex space-x-28">
+      <header className="text-sm flex space-x-28 gap-1">
         <ChatText size={20} />
+        {card!.messages.length > 0 && card?.messages.length}
         <span
-          className={`text-sm px-1 rounded-lg backdrop-blur-3xl text-black font-semibold ${validateStatus(card?.status)}`}
+          className={`text-sm px-1 rounded-lg backdrop-blur-3xl text-black font-semibold ${validateStatus(
+            card?.status
+          )}`}
         >
           {card?.status}
         </span>

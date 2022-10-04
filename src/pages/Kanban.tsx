@@ -46,7 +46,7 @@ const Kanban = () => {
   return (
     <div className="m-10">
       <HeaderPage title={"Kanban"} subtitle={"Manage the tasks from enterprise."} />
-      <div className="grid grid-cols-3 grid-flow-col gap-4">
+      <div className="flex gap-4">
         {colums.map((colum, index) => {
           return (
             <Colum key={index} colum={colum}>
