@@ -1,7 +1,14 @@
 import HeaderPage from "../components/HeaderPage";
 import Card from "../components/kanban/Card";
+import Colum from "../components/kanban/Colum";
 
 const Kanban = () => {
+  const colums = [
+    { id: 0, name: "Not Started" },
+    { id: 1, name: "Started" },
+    { id: 2, name: "Finish" },
+  ];
+
   const cards = [
     {
       id: 0,
@@ -40,20 +47,15 @@ const Kanban = () => {
     <div className="m-10">
       <HeaderPage title={"Kanban"} subtitle={"Manage the tasks from enterprise."} />
       <div className="grid grid-cols-3 grid-flow-col gap-4">
-        <div className="bg-zinc-700 p-1 rounded-md">
-          <div className="bg-zinc-900 px-2 rounded-md w-full text-center">Header kanban</div>
-          {cards.map((card, index) => {
-            return <Card key={index} card={card} />;
-          })}
-        </div>
-        <div className="bg-zinc-700 p-1 rounded-md">
-          <div className="bg-zinc-900 px-2 rounded-md w-full text-center">Header kanban</div>
-          <Card />
-        </div>
-        <div className="bg-zinc-700 p-1 rounded-md">
-          <div className="bg-zinc-900 px-2 rounded-md w-full text-center">Header kanban</div>
-          <Card />
-        </div>
+        {colums.map((colum, index) => {
+          return (
+            <Colum key={index} colum={colum}>
+              {cards.map((card, index) => {
+                return <Card key={index} card={card} />;
+              })}
+            </Colum>
+          );
+        })}
       </div>
     </div>
   );
