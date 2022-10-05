@@ -16,8 +16,22 @@ const Kanban = () => {
       name: "Kelvis Delapena",
       status: "High level",
       createdAt: new Date(),
-      messages: [],
+      messages: [
+        {
+          name: "Kelvis Delapena",
+          message: "Criar card",
+        },
+        {
+          name: "Kelvis Delapena",
+          message: "Criar card",
+        },
+        {
+          name: "Kelvis Delapena",
+          message: "Criar card",
+        },
+      ],
       description: "Este card foi criado para a atualizacao de tasks no board",
+      colum: "Finish",
     },
     {
       id: 1,
@@ -32,6 +46,7 @@ const Kanban = () => {
         },
       ],
       description: "Ajuste de cores nas telas",
+      colum: "Started",
     },
     {
       id: 2,
@@ -41,8 +56,10 @@ const Kanban = () => {
       createdAt: new Date(),
       messages: [],
       description: "Teste de card",
+      colum: "Not started",
     },
   ];
+
   return (
     <div className="m-10">
       <HeaderPage title={"Kanban"} subtitle={"Manage the tasks from enterprise."} />
