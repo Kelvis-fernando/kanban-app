@@ -1,6 +1,5 @@
 import HeaderPage from "../components/HeaderPage";
 import Table from "../components/users/Table";
-import * as Dialog from "@radix-ui/react-dialog";
 
 const Users = () => {
   const users = [
@@ -45,7 +44,7 @@ const Users = () => {
   return (
     <div className="m-10 px-3 py-4">
       <HeaderPage title={"Users"} subtitle={"Manage and add new users."} />
-      <button className="my-2 bg-zinc-700 rounded px-2 py-1">New user</button>
+      <button className="my-2 bg-zinc-700 rounded px-2 py-1 hover:bg-zinc-600">New user</button>
       <table>
         <tbody className="w-full text-md shadow-md rounded mb-4">
           {users.map((user, index) => {

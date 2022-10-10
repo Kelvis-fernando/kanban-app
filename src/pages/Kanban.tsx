@@ -64,8 +64,8 @@ const Kanban = () => {
     <div className="m-10">
       <HeaderPage title={"Kanban"} subtitle={"Manage the tasks from enterprise."} />
       <div className="my-2">
-        <button className="bg-zinc-700 rounded px-2 py-1">Create colum</button>
-        <button className="mx-2 bg-zinc-700 rounded px-2 py-1">New card</button>
+        <button className="bg-zinc-700 rounded px-2 py-1 hover:bg-zinc-600">Create colum</button>
+        <button className="mx-2 bg-zinc-700 rounded px-2 py-1 hover:bg-zinc-600">New card</button>
       </div>
       <div className="flex gap-4">
         {colums.map((colum, index) => {

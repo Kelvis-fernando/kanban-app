@@ -18,7 +18,7 @@ const Card = ({ card }: CardProps) => {
   };
 
   return (
-    <div className="p-2 max-w-[300px] flex flex-col items-center bg-zinc-900 my-2 mx-2 rounded-sm transparent">
+    <div className="p-2 max-w-[300px] flex flex-col items-center bg-zinc-900 my-2 mx-2 rounded-sm transparent cursor-pointer">
       <header className="text-sm flex space-x-28 gap-1">
         <ChatText size={20} />
         {card!.messages.length > 0 && card?.messages.length}
