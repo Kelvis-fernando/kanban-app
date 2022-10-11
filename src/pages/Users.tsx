@@ -1,4 +1,5 @@
 import HeaderPage from "../components/HeaderPage";
+import Nav from "../components/Nav";
 import Table from "../components/users/Table";
 
 const Users = () => {
@@ -42,20 +43,23 @@ const Users = () => {
   ];
 
   return (
-    <div className="m-10 px-3 py-4">
-      <HeaderPage title={"Users"} subtitle={"Manage and add new users."} />
-      <button className="my-2 bg-zinc-700 rounded px-2 py-1 hover:bg-zinc-600">New user</button>
-      <table>
-        <tbody className="w-full text-md shadow-md rounded mb-4">
-          {users.map((user, index) => {
-            return (
-              <>
-                <Table key={index} {...user} />
-              </>
-            );
-          })}
-        </tbody>
-      </table>
+    <div className="flex space-x-auto">
+      <Nav />
+      <div className="m-10 px-3 py-4">
+        <HeaderPage title={"Users"} subtitle={"Manage and add new users."} />
+        <button className="my-2 bg-zinc-700 rounded px-2 py-1 hover:bg-zinc-600">New user</button>
+        <table>
+          <tbody className="w-full text-md shadow-md rounded mb-4">
+            {users.map((user, index) => {
+              return (
+                <>
+                  <Table key={index} {...user} />
+                </>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
