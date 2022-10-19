@@ -5,7 +5,7 @@ interface HeaderPageProps {
 
 const HeaderPage = ({ title, subtitle }: HeaderPageProps) => {
   return (
-    <div className="mb-10">
+    <div className="mb-10 text-center">
       <h1 className="font-black text-lg">{title}</h1>
       <h3 className="text-sm">{subtitle}</h3>
     </div>
