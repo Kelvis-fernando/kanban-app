@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./styles/main.css";
 import Users from "./pages/Users";
 import Login from "./pages/auth/Login";
+import Register from "./pages/auth/Register";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
             <Route path="/" element={<Kanban />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/users" element={<Users />}></Route>
+            <Route path="/register" element={<Register />}></Route>
           </Routes>
         </div>
       </BrowserRouter>

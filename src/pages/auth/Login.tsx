@@ -31,8 +31,8 @@ const Login = () => {
         </button>
       </form>
       <div className="flex flex-col items-center justify-center mt-4 font-light">
-        <a className="cursor-pointer" onClick={() => navigate("register")}>Create a account</a>
-        <a className="cursor-pointer" onClick={() => navigate("forgotpassword")}>Forgot you password?</a>
+        <a className="cursor-pointer" onClick={() => navigate("/register")}>Create a account</a>
+        <a className="cursor-pointer" onClick={() => navigate("/forgotpassword")}>Forgot you password?</a>
       </div>
     </div>
   );
