@@ -1,0 +1,15 @@
+.modal-container {
+  @apply bg-zinc-900 bg-opacity-40 absolute top-0 bottom-0 left-0 right-0 w-full flex justify-center items-center;
+}
+
+.modal-content {
+  @apply bg-white rounded-sm text-zinc-900 p-6 relative;
+}
+
+.close-button {
+  @apply m-1 cursor-pointer absolute top-[2%] right-[2%] font-bold;
+}
+
+.close-button svg:hover {
+  @apply text-zinc-500;
+}
