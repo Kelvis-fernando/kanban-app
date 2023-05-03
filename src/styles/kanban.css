@@ -1,0 +1,30 @@
+/* Coluna */
+.column-container {
+  @apply bg-zinc-700 p-1 rounded-md max-w-[300px];
+}
+
+.column-content {
+  @apply bg-zinc-900 px-2 rounded-md w-full text-center;
+}
+
+/* Card */
+.card-container {
+  @apply p-2 max-w-[300px] flex flex-col items-center bg-zinc-900 my-2 mx-2 rounded-sm cursor-pointer;
+}
+
+.card-header {
+  @apply text-sm flex space-x-28 gap-1;
+}
+
+.card-status {
+  @apply text-sm px-1 rounded-lg backdrop-blur-3xl text-black font-semibold;
+}
+
+.card-data {
+  @apply flex flex-col items-center;
+}
+
+.card-data h5,
+p {
+  @apply text-[12px] text-zinc-400 py-2 text-center;
+}
